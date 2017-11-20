@@ -11,14 +11,14 @@ import (
 // Create a structure called person with 4 attributes
 type Person struct{
   ID string `json:"ID,omitempty"`
-  Firstname string `json:"Firstname,omitempty"`
-  Lastname string `json:"Lastname,omitempty"`
-  Address *Address `json:"Address,omitempty"`
+  Firstname string `json:"firstName,omitempty"`
+  Lastname string `json:"lastName,omitempty"`
+  Address *Address `json:"address,omitempty"`
 }
 
 type Address struct{
-  City string `json:"City,omitempty"`
-  State string `json:State,omitempty`
+  City string `json:"city,omitempty"`
+  State string `json:state,omitempty`
 }
 
 //global variable of type Person
